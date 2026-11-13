@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portofolio ALFA21</title>
+<meta name="description" content="Portofolio Muhammad Umar Al Faruq, mahasiswa IT di Tuban. UI/UX dan vibe coding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="foto.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#atas" id="brand">ALFA<span>.</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#sosial" class="opt">Sosial</a>
+      <a href="#kontak" class="opt">Kontak</a>
+      <button class="iconbtn" id="themebtn" type="button" aria-label="Ganti tema terang atau gelap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="atas" class="wrap">
+  <div class="hero">
+    <h1 class="name" id="heroName">ALFA</h1>
+    <div class="figure" role="img" aria-label="Foto Muhammad Umar Al Faruq">
+      <div class="float"><div class="tilt" id="tilt">
+        <div class="layer l-glow"></div>
+        <div class="layer l-back"></div>
+        <div class="layer l-mid"></div>
+        <div class="layer l-photo"></div>
+        <div class="fade"></div>
+      </div></div>
+    </div>
+    <div class="tag"><span id="heroRole">Mahasiswa IT</span><span id="heroRole2">Desainer &amp; Developer</span></div>
+    <div class="corners">
+      <p class="corner l" id="heroL">Jaringan,ui/ux dan Vide coding.</p>
+      <p class="corner r" id="heroR">Setiap proyek dibuat rapi dari sisi sistem dan tampilan.</p>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#sosial">Sosial media</a>
+      <a class="btn" href="#kontak">Hubungi saya</a>
+    </div>
+  </div>
+
+  <section id="tentang">
+    <div class="sec-head"><div><span class="mono">Tentang</span><h2>Siapa saya</h2></div></div>
+    <div class="about">
+      <div>
+        <p class="lead" id="aboutLead"></p>
+        <p class="body" id="aboutBody"></p>
+        <div class="chips" id="skills"></div>
+      </div>
+      <dl class="facts" id="facts"></dl>
+    </div>
+  </section>
+
+  <section id="sosial">
+    <div class="sec-head">
+      <div><span class="mono">Temukan saya</span><h2>Sosial media</h2><p>Klik salah satu akun untuk pindah ke halaman aslinya.</p></div>
+    </div>
+    <div id="plats"></div>
+  </section>
+
+  <section id="kontak">
+    <div class="contact">
+      <div>
+        <span class="mono">21-06</span>
+        <h2>21<em></em>alfa</h2>
+      </div>
+      <div>
+        <p id="contactText" style="margin:0; color:var(--muted); max-width:44ch"></p>
+        <div class="social-row" id="footIcons"></div>
+        <div class="mailbox"><code id="emailText"></code><button class="btn" type="button" id="copyMail">Salin email</button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono" id="copy"></span>
+    <span class="mono">ALFA21Tey</span>
+  </footer>
+</main>
+
+<button class="iconbtn" id="editfab" type="button" aria-label="Buka pengaturan portofolio" aria-expanded="false" aria-controls="panel">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>
+</button>
+<aside id="panel" hidden aria-label="Pengaturan portofolio">
+  <h4>Atur portofolio</h4>
+  <p>Perubahan langsung tampil dan tersimpan di browser ini. Untuk menjadikannya permanen, salin CONFIG lalu tempel ke bagian atas kode.</p>
+  <form id="editform" autocomplete="off"></form>
+  <div class="row">
+    <button class="btn primary" type="button" id="saveBtn">Simpan</button>
+    <button class="btn" type="button" id="exportBtn">Salin CONFIG</button>
+    <button class="btn" type="button" id="resetBtn">Reset</button>
+  </div>
+  <label style="margin-top:12px" for="exportOut" id="exportLabel" hidden>Hasil CONFIG
+    <textarea id="exportOut" readonly></textarea>
+  </label>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
