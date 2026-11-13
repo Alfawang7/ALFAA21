@@ -21,7 +21,7 @@ const CONFIG = {
     ["Kemampuan", "UI/UX, vibe coding"],
     ["Status", "Mahasiswa IT"]
   ],
-  email: "alfawang7@emailkamu.com",
+  email: "alfawang7@email.com",
   kontakTeks: "Kirim pesan lewat email atau DM di salah satu platform di bawah.",
   sosial: {
    instagram: { aktif: true, handle: "@__namasayaal",   url: "https://www.instagram.com/__namasayaal?exln=MTh5dngzaHU5czI0eA==" },
