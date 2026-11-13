@@ -68,7 +68,7 @@ const layoutPref = {};
 try {
   const s = JSON.parse(localStorage.getItem(LS) || "null");
   if (s) {
-    ["nama", "namaHero", "peran", "peran2", "tentangLead", "email"].forEach(k => { if (typeof s[k] === "string" && s[k]) C[k] = s[k]; });
+    ["nama", "namaHero", "peran", "peran2", "tentangLead", "gmail"].forEach(k => { if (typeof s[k] === "string" && s[k]) C[k] = s[k]; });
     if (s.sosial) for (const p in s.sosial) if (C.sosial[p]) Object.assign(C.sosial[p], s.sosial[p]);
     if (s.layout) Object.assign(layoutPref, s.layout);
   }
